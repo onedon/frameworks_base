@@ -30,4 +30,11 @@
     <string name="reboot_confirm" product="default">Your phone will reboot.</string>
     <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
     <string name="reboot_progress">Rebooting\u2026</string>
+
+    <string name="battery_style_text">Text only</string>
+    <string name="battery_style_default">Default</string>
+    <string name="battery_style_meter_horizontal">Horizontal bar</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_droid">Droid</string>
+
 </resources>
