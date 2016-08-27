@@ -781,7 +781,7 @@ void AssetManager::addSystemOverlays(const char* pathOverlaysList,
         oap.path = String8(buf, space - buf);
         oap.type = kFileTypeRegular;
         oap.idmap = String8(space + 1, newline - space - 1);
-        oap.isSystemOverlay = true;
+        oap.isSystemAsset = true;
 
         Asset* oass = const_cast<AssetManager*>(this)->
             openNonAssetInPathLocked("resources.arsc",
@@ -793,7 +793,6 @@ void AssetManager::addSystemOverlays(const char* pathOverlaysList,
             offset++;
             sharedRes->add(oass, oidmap, offset + 1, false);
             const_cast<AssetManager*>(this)->mAssetPaths.add(oap);
-            const_cast<AssetManager*>(this)->mZipSet.addOverlay(targetPackagePath, oap);
         }
     }
 
