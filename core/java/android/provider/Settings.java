@@ -6324,6 +6324,12 @@ public final class Settings {
                 = "demo_user_setup_complete";
 
         /**
+         * Whether the device should tint notification title.
+         * @hide
+         */
+        public static final String NOTIFICATION_TITLE_TINT = "notification_title_tint";
+
+        /**
          * This are the settings to be backed up.
          *
          * NOTE: Settings are backed up and restored in the order they appear
