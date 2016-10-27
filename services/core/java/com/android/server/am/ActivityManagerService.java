@@ -1678,7 +1678,7 @@ public final class ActivityManagerService extends ActivityManagerNative
                 }
             } break;
             case SHOW_FINGERPRINT_ERROR_UI_MSG: {
-                if (mShowDialogs) {
+                if (false) { // mShowDialogs) {
                     AlertDialog d = new BaseErrorDialog(mContext);
                     d.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ERROR);
                     d.setCancelable(false);
