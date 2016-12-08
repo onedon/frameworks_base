@@ -2725,5 +2725,4 @@
   <!-- Screen-size-dependent modes for picker dialogs. -->
   <java-symbol type="integer" name="time_picker_mode" />
   <java-symbol type="integer" name="date_picker_mode" />
->>>>>>> 4e32921038acf82b52d7fa6a29c17567f3201f7d
 </resources>

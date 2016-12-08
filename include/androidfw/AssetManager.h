@@ -284,6 +284,9 @@ private:
     void updateResourceParamsLocked() const;
     bool appendPathToResTable(const asset_path& ap, bool appAsLib=false) const;
 
+    void addSystemOverlays(const char* pathOverlaysList,
+             ResTable* sharedRes, size_t offset) const;
+
     Asset* openIdmapLocked(const struct asset_path& ap) const;
 
     class SharedZip : public RefBase {

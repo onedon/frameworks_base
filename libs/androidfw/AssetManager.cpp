@@ -752,8 +752,7 @@ Asset* AssetManager::openIdmapLocked(const struct asset_path& ap) const
     return ass;
 }
 
-void AssetManager::addSystemOverlays(const char* pathOverlaysList,
-        const String8& targetPackagePath, ResTable* sharedRes, size_t offset) const
+void AssetManager::addSystemOverlays(const char* pathOverlaysList, ResTable* sharedRes, size_t offset) const
 {
     FILE* fin = fopen(pathOverlaysList, "r");
     if (fin == NULL) {
